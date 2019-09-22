@@ -25,14 +25,6 @@ export class ShowDepComponent implements OnInit {
 
   refreshDepList() {
     const dummyData = [
-      // {
-      //   DepartmentID: 1,
-      //   DepartmentName: 'IT'
-      // },
-      // {
-      //   DepartmentID: 2,
-      //   DepartmentName: 'Finance'
-      // }
 
     ];
     this.service.getDepList().subscribe(data => {
