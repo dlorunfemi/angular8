@@ -14,6 +14,34 @@
       "DepartmentID": 4,
       "DepartmentName": "Operation"
     }
+  ],
+  "employee": [{
+      "EmployeeID": 1,
+      "EmployeeName": "Dominion Olorunfemi",
+      "Department": "Finance",
+      "MailID": "Finance@gmail.com",
+      "DOJ": "Finance"
+    },
+    {
+      "EmployeeID": 2,
+      "EmployeeName": "Dominion Olorunfemi",
+      "Department": "IT",
+      "MailID": "Finance@gmail.,
+      "DOJ": "Finance"com"
+    },
+    {
+      "EmployeeID": 3,
+      "EmployeeName": "Dominion Olorunfemi",
+      "Department": "Support",
+      "MailID": "Finance@gmail.com",
+      "DOJ": "Finance"
+    }, {
+      "EmployeeID": 4,
+      "EmployeeName": "Dominion Olorunfemi",
+      "Department": "Operation",
+      "MailID": "Finance@gmail.com",
+      "DOJ": "Finance"
+    }
   ]
 
 }

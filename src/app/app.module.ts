@@ -4,7 +4,16 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { MatTableModule, MatIconModule, MatButtonModule } from '@angular/material';
+import {
+  MatTableModule,
+  MatIconModule,
+  MatButtonModule,
+  MatSortModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatDialogModule,
+  MatSnackBarModule
+} from '@angular/material';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { EmployeeComponent } from './employee/employee.component';
@@ -18,7 +27,8 @@ import { AddDepComponent } from './department/add-dep/add-dep.component';
 
 import { DepartmentService } from './services/department.service';
 import { EmployeeService } from './services/employee.service';
-import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,7 +40,7 @@ import { HttpClient } from '@angular/common/http';
     DepartmentComponent,
     ShowDepComponent,
     EditDepComponent,
-    AddDepComponent
+    AddDepComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,12 +49,24 @@ import { HttpClient } from '@angular/common/http';
     MatTableModule,
     MatIconModule,
     MatButtonModule,
-    HttpClient
+    HttpClientModule,
+    MatSortModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatDialogModule,
+    FormsModule,
+    MatSnackBarModule
   ],
   providers: [
     DepartmentService,
     EmployeeService,
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents:[
+    AddDepComponent,
+    EditDepComponent,
+    AddEmpComponent,
+    EditEmpComponent,
+  ]
 })
 export class AppModule {}
